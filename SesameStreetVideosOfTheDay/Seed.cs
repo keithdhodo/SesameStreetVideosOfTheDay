@@ -12,7 +12,7 @@ namespace SesameStreetVideosOfTheDay
     public static class Seed
     {
         [FunctionName("Seed")]
-        public static IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", Route = "Seed/")]HttpRequest req, TraceWriter log)
+        public static IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", Route = "Seed")]HttpRequest req, TraceWriter log)
         {
             log.Info("C# HTTP trigger function processed a request.");
 
