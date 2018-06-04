@@ -7,12 +7,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs.Host;
 using Newtonsoft.Json;
 
-namespace SesameStreetVideosOfTheDay
+namespace SesameStreetVideosOfTheDayAPI
 {
-    public static class Seed
+    public static class SeedData
     {
-        [FunctionName("Seed")]
-        public static IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", Route = "Seed")]HttpRequest req, TraceWriter log)
+        [FunctionName("SeedData")]
+        public static IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", Route = "SeedData")]HttpRequest req, TraceWriter log)
         {
             log.Info("C# HTTP trigger function processed a request.");
 
